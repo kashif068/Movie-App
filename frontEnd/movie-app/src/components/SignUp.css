@@ -1,0 +1,111 @@
+* {
+    color: white;
+    background-color: #093545;
+    font-family: sans-serif;
+}
+
+.main-signup {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.form-group1 input {
+    color: white;
+    background-color: #224957;
+    border-radius: 8px;
+    border: none;
+    margin-top: 10px;
+    width: 300px;
+    height: 40px;
+    padding-left: 15px;
+    box-shadow: 6px 4px 12px rgb(44, 155, 122);
+}
+
+.form-group2 input {
+    color: white;
+    background-color: #224957;
+    border-radius: 8px;
+    border: none;
+    width: 300px;
+    margin-top: 25px;
+    height: 40px;
+    padding-left: 15px;
+    box-shadow: 6px 4px 12px rgb(44, 155, 122);
+}
+
+.form-group3 input {
+    color: white;
+    background-color: #224957;
+    border-radius: 8px;
+    border: none;
+    width: 300px;
+    margin-top: 25px;
+    height: 40px;
+    padding-left: 15px;
+    box-shadow: 6px 4px 12px rgb(44, 155, 122);
+}
+
+.login-link {
+    text-decoration: none;
+    color: #6fd1f8;
+    padding-left: 5px;
+}
+
+.login-link:hover {
+    color: #1e8fda;
+}
+
+.sign-up-form h1{
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin-left: 70px;
+}
+
+.sign-up-form button {
+    color: white;
+    background-color: #2bd17e;
+    border: none;
+    border-radius: 8px;
+    margin-top: 25px;
+    font-family: sans-serif;
+    margin-top: 35px;
+    width: 300px;
+    height: 50px;
+}
+
+.form-group1 input:focus {            
+    outline: 1px solid #197ca3;
+}
+
+.form-group2 input:focus {           
+    outline: 1.5px solid #197ca3;
+}
+
+.form-group3 input:focus {         
+    outline: 1.5px solid #197ca3;
+}
+
+.sign-up-form p {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.sign-up-form button:hover {
+  border: 2px solid rgb(250, 242, 242);
+  transition-duration: 0.02s;
+  font-size: 20px;
+  transition-timing-function: ease-in;
+  box-shadow: 5px 5px 12px rgb(44, 155, 122);
+}
+
+.sign-up-form {
+    border: 2px solid #197ca3; 
+    border-radius: 10px;
+    padding: 30px 50px;
+    box-shadow: 10px 10px 80px #0d0f0f;
+    max-width: 400px; 
+    width: 100%;
+  }

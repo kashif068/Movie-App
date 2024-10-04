@@ -1,0 +1,123 @@
+.content {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    justify-content: space-between;
+    color: white;
+}
+
+.upload {
+  margin-left: 200px;
+  margin-top: 80px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.image-upload label {
+  background-color: #224957;
+}
+
+.image-upload span {
+  background-color: #224957;
+}
+
+.control{
+  margin-right: 240px;
+  margin-top: 210px;
+  font-family: sans-serif;
+}
+
+.form-group8 {
+  margin-top: 20px;
+  margin-bottom: 45px;
+}
+
+.form-group7 input {
+  background-color: #224957;
+  border: 2px solid #224957;
+  padding-left: 12px;
+  width: 320px;
+  height: 40px;
+  border-radius: 8px;
+  color: white;
+  box-shadow: 6px 4px 12px rgb(44, 155, 122);
+}
+
+.form-group7 input:focus {            /*for input fieled border color*/
+  outline: 2px solid #197ca3;
+}
+
+.form-group7 input::placeholder {
+  color: white;
+  opacity: 0.25;
+}
+
+.form-group8 input {
+  background-color: #224957;
+  border: 2px solid #224957;
+  padding-left: 12px;
+  width: 200px;
+  height: 40px;
+  border-radius: 8px;
+  color: white;
+  box-shadow: 6px 4px 12px rgb(44, 155, 122);
+}
+
+.form-group8 input:focus {            /*for input fieled border color*/
+  outline: 2px solid #197ca3;
+}
+
+.form-group8 input::placeholder {
+  color: white;
+  opacity: 0.25;
+}
+
+.cancel-button {
+  width: 150px;
+  height: 42px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+  background-color: #224957;
+}
+
+.create-button {
+  width: 150px;
+  height: 42px;
+  color: white;
+  margin-left: 20px;
+  border: 2px solid #2bd17e;
+  border-radius: 8px;
+  background-color: #2bd17e;
+  font-weight: 550;
+}
+
+.image-upload {
+  background-color: #224957;
+  border: 2px dashed #ccc;
+  border-radius: 5px;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+
+.create-button:hover {
+  border: 2px solid rgb(250, 242, 242);
+  transition-duration: 0.02s;
+  font-size: 18px;
+  transition-timing-function: ease-in;
+  box-shadow: 5px 5px 8px rgb(44, 155, 122);
+}
+
+.cancel-button:hover {
+  border: 2px solid rgb(250, 242, 242);
+  transition-duration: 0.02s;
+  font-size: 18px;
+  transition-timing-function: ease-in;
+  box-shadow: 3px 3px 8px rgb(217, 243, 235);
+}

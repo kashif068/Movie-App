@@ -1,0 +1,8 @@
+Icons => logout+drop image+logout
+Image is looking in preview when selected
+Remember me (functionality)
+Pagination active color
+Responsive
+Show password (functionality)
+Title, release year and image are remain same before update it when click on update button
+Understand the code

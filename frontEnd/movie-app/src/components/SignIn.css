@@ -1,0 +1,86 @@
+.main-signin {
+  display: flex;
+  justify-content: center;
+  margin-top: 110px;
+}
+
+.form-group4 input {
+  color: white;
+  background-color: #224957;
+  border-radius: 8px;
+  border: none;
+  margin-top: 10px;
+  width: 300px;
+  height: 40px;
+  padding-left: 15px;
+  box-shadow: 6px 4px 12px rgb(44, 155, 122);
+}
+
+.form-group5 input {
+  color: white;
+  background-color: #224957;
+  border-radius: 8px;
+  border: none;
+  width: 300px;
+  margin-top: 25px;
+  height: 40px;
+  padding-left: 15px;
+  box-shadow: 6px 4px 12px rgb(44, 155, 122);
+}
+
+.form-group6 input {
+  border-radius: 8px;
+  border: none;
+  width: 30px;
+  margin-left: 75px;
+  margin-top: 25px;
+  height: 15px;
+}
+
+.sign-in-form h1{
+  color: white;
+  font-family: sans-serif;
+  font-weight: 600;
+  margin-left: 80px;
+}
+
+.form-group6 label {
+  color: white;
+}
+
+.form-group4 input:focus {           
+  outline: 1.5px solid #197ca3;
+}
+
+.form-group5 input:focus {           
+  outline: 1.5px solid #197ca3;
+}
+
+.sign-in-form button:hover {
+  border: 2px solid rgb(250, 242, 242);
+  transition-duration: 0.02s;
+  font-size: 20px;
+  transition-timing-function: ease-in;
+  box-shadow: 5px 5px 12px rgb(44, 155, 122);
+}
+
+.sign-in-form button {
+  color: white;
+  background-color: #2bd17e;
+  border: none;
+  border-radius: 8px;
+  margin-top: 25px;
+  font-family: sans-serif;
+  margin-top: 20px;
+  width: 300px;
+  height: 50px;
+}
+
+.sign-in-form {
+  border: 2px solid #197ca3; 
+  border-radius: 10px;
+  padding: 40px 50px;
+  box-shadow: 10px 10px 80px #0d0f0f;
+  max-width: 400px; 
+  width: 100%;
+}
