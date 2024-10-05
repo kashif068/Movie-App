@@ -22,6 +22,7 @@ function MovieList() {
       }
     )
     navigate('/movie-list');
+    window.confirm('Are you sure you want to delete this movie?');
     console.log('Movie is deleted successfully:', data);
     navigate('/movie-list');
     alert('Movie deleted successfully! Reload the page to see changes');
