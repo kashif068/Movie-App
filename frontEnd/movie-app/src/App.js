@@ -5,7 +5,7 @@ import SignIn from './components/SignIn.js';
 import EmptyState from './components/EmptyState';
 import MovieList from './components/MovieList';
 import CreateMovie from './components/CreateMovie';
-import EditMovie from './components/EditMovie'; 
+import EditMovie from './components/EditMovie';
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         <Route path="/empty-state" element={<EmptyState />} />
         <Route path="/movie-list" element={<MovieList />} />
         <Route path="/create-movie" element={<CreateMovie />} />
-        <Route path="/edit-movie/:id" element={<EditMovie />} />  
+        <Route path="/edit-movie/:id" element={<EditMovie />} />
       </Routes>
     </Router>
   );

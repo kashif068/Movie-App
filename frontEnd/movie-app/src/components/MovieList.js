@@ -11,22 +11,22 @@ function MovieList() {
   const [error, setError] = useState(null);
 
   const handleDelete = async (id) => {
-    try{
+    try {
       const token = localStorage.getItem('token');
       console.log(`Token ${token}`);
-    const data = await axios.delete(`http://localhost:4000/api/movies/${id}`, 
-      {
-        headers: { 
-          "Authorization": token 
+      const data = await axios.delete(`http://localhost:4000/api/movies/${id}`,
+        {
+          headers: {
+            "Authorization": token
+          }
         }
-      }
-    )
-    navigate('/movie-list');
-    window.confirm('Are you sure you want to delete this movie?');
-    console.log('Movie is deleted successfully:', data);
-    navigate('/movie-list');
-    alert('Movie deleted successfully! Reload the page to see changes');
-    
+      )
+      navigate('/movie-list');
+      window.confirm('Are you sure you want to delete this movie?');
+      console.log('Movie is deleted successfully:', data);
+      navigate('/movie-list');
+      alert('Movie deleted successfully! Reload the page to see changes');
+
     } catch (error) {
       console.log('error is', error);
     }
@@ -38,19 +38,19 @@ function MovieList() {
 
   const token = localStorage.getItem('token');
   console.log(`Token ${token}`);
-  
+
   const handleLogout = (e) => {
     const confirmLogout = window.confirm('Are you sure you want to logout?');
-  
-  if (confirmLogout) {
-    localStorage.clear();
-    console.log(localStorage.getItem('authToken')); 
-    alert('You are logged out!')
-    navigate('/SignIn'); 
-  } else {
-    console.log('Logout cancelled');
-  }
-};
+
+    if (confirmLogout) {
+      localStorage.clear();
+      console.log(localStorage.getItem('authToken'));
+      alert('You are logged out!')
+      navigate('/');
+    } else {
+      console.log('Logout cancelled');
+    }
+  };
 
   useEffect(() => {
     const fetchMovies = async () => {
@@ -86,7 +86,7 @@ function MovieList() {
       <header>
         <h1>My Movies</h1>
         <button onClick={handleMake} className='click'>+</button>
-        <button onClick={handleLogout}  className='logout-button'>Logout</button>
+        <button onClick={handleLogout} className='logout-button'>Logout</button>
       </header>
       <div className="movie-list">
         {error ? (
@@ -94,7 +94,7 @@ function MovieList() {
         ) : (
           movies.length > 0 ? (
             movies.map((movie) => (
-              
+
               <div key={movie._id} className="movie-card">
                 {console.log(`http://localhost:4000/${movie.img}`)}
                 {movie.img ? (
@@ -107,7 +107,7 @@ function MovieList() {
                 <Link to={`/edit-movie/${movie._id}`} className="Edit-button">
                   Edit
                 </Link>
-                <button onClick={()=>{handleDelete(movie._id)}} className='this-delete'>Delete</button>
+                <button onClick={() => { handleDelete(movie._id) }} className='this-delete'>Delete</button>
               </div>
             ))
           ) : (
@@ -119,10 +119,10 @@ function MovieList() {
         <div className='to-edit'>
         </div>
         <div className='tasks-buttons'>
-        <button className="prev-btn">Prev</button>
-        <span className="page-number">1</span>
-        <span className="page-number">2</span>
-        <button className="next-btn">Next</button>
+          <button className="prev-btn">Prev</button>
+          <span className="page-number">1</span>
+          <span className="page-number">2</span>
+          <button className="next-btn">Next</button>
         </div>
       </div>
     </>
